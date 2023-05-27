@@ -1,5 +1,5 @@
 
-![Logo](banner.png)
+![Screenshot](banner.png)
 
 
 # Sekolahku
