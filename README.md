@@ -40,7 +40,7 @@ Sekolahku merupakan Sistem Informasi Berbasis WEB yang dapat digunakan untuk Mem
 
 ## Tim Kami
 
-- [@adamxrb](https://www.instagram.com/adamxrb)
+- [@adamxrb](https://www.instagram.com/adamxrb/)
 - [@yasirfahmi._](https://www.instagram.com/yasirfahmi._)
 - [@ryan_reynickha](https://www.instagram.com/ryan_reynickha)
 - [@jifasolasido](https://www.instagram.com/jifasolasido)
