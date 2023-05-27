@@ -1,5 +1,5 @@
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Screenshot](banner.png)
 
 
 # Sekolahku
@@ -43,6 +43,6 @@ Sekolahku merupakan Sistem Informasi Berbasis WEB yang dapat digunakan untuk Mem
 - [@adamxrb](https://www.instagram.com/adamxrb)
 - [@yasirfahmi._](https://www.instagram.com/yasirfahmi._)
 - [@ryan_reynickha](https://www.instagram.com/ryan_reynickha)
-- [@jihanfasolasido](https://www.instagram.com/jihanfasolasido)
+- [@jifasolasido](https://www.instagram.com/jifasolasido)
 - [@cintyajuanita](https://www.instagram.com/cintyajuanita)
 
