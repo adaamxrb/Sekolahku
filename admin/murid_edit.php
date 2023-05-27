@@ -43,7 +43,7 @@ $tampil_akun="SELECT * FROM `akun` ORDER BY `username` ASC ";
 $hasil_akun=mysqli_query($koneksi, $tampil_akun);
 ?>
 	
-    <form class="form-group" action="Proses_Edit_Murid.php" method="post" onSubmit="">
+    <form class="form-group" action="proses_murid_edit.php" method="post" onSubmit="">
     <table class="table">
     <tr>
     	<td> NISN : </td>
@@ -205,7 +205,7 @@ $hasil_akun=mysqli_query($koneksi, $tampil_akun);
 			<select name='Jurusan'>
     			<option value='IPA' selected> IPA </option>
 				<option value='IPS'> IPS </option>
-				<option value='BAHASA'> BAHASA </option>
+				<option value='BHS'> BHS </option>
 			</select>
 			";
 			}
@@ -216,7 +216,7 @@ $hasil_akun=mysqli_query($koneksi, $tampil_akun);
 			<select name='Jurusan'>
     			<option value='IPS' selected> IPS </option>
 				<option value='IPA'> IPA </option>
-				<option value='BAHASA'> BAHASA </option>
+				<option value='BHS'> BHS </option>
 			</select>
 			";
 			}
@@ -225,7 +225,7 @@ $hasil_akun=mysqli_query($koneksi, $tampil_akun);
 			{
 			echo "
 			<select name='Jurusan'>
-    			<option value='BAHASA' selected> BAHASA </option>
+    			<option value='BHS' selected> BHS </option>
 				<option value='IPS'> IPS </option>
 				<option value='IPA'> IPA </option>
 			</select>
