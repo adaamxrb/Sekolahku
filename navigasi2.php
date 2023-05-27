@@ -9,7 +9,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-			<h1><a class="navbar-brand" href="../index.php"><i class="fa fa-leanpub" aria-hidden="true"></i> SekolahKu</a></h1>
+			<h1><a class="navbar-brand" href="../index.php"><i class="fa fa-leanpub" aria-hidden="true"></i> scholarly</a></h1>
 
 			</div>
 			<div class="w3layouts_header_right ">
@@ -68,7 +68,7 @@
 								</tr>
 								
 								<tr>
-									<td><a class='dropdown-item' href='../Admin/mata_pelajaran.php'>Mata Pelajaran</a></td>
+									<td><a class='dropdown-item' href='../Admin/matapelajaran.php'>Mata Pelajaran</a></td>
 								</tr>
 																
 								<tr>
@@ -144,7 +144,7 @@
 						<li class="active"><a href="../index.php" class="effect-3">Beranda</a></li>
 						<li> <a class='effect-3 scroll' data-toggle='dropdown'>Jurusan<span class='caret'></span> </a>
 							<ul class='dropdown-menu'>
-								<li><a href='../akutansi.php' >Akutansi</a></li>
+								<li><a href='../ipa.php' >Akutansi</a></li>
 								<li><a href='../rpl.php' >Rekayasa Perangkat Lunak</a></li>
 								<li><a href='../otomotif.php' >Otomotif</a></li>
 							</ul>

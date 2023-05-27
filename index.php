@@ -1,13 +1,13 @@
 <?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="zxx">
+<html>
 
 <head>
-  <title>SMK TERPADU</title>
+  <title>Sekolahku</title>
   <!-- Meta tag Keywords -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="keywords" content="Scholarly web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+  <meta name="keywords" content="Sekolahku" />
   <script type="application/x-javascript">
     addEventListener("load", function() {
       setTimeout(hideURLbar, 0);
@@ -17,16 +17,17 @@
       window.scrollTo(0, 1);
     }
   </script>
-  <!--// Meta tag Keywords -->
+
   <!-- css files -->
-  <link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS -->
-  <link rel="stylesheet" href="css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css"> 
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> 
+  <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/swipebox.css">
   <link rel="stylesheet" href="css/roma.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <link rel="stylesheet" href="css/jquery-ui.css" />
   <!-- //css files -->
+
   <!-- online-fonts -->
   <link href="//fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,latin-ext" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
@@ -50,13 +51,13 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="images/MURID1.jpg" alt="gambar 1" style="width:100%; height: 500px">
+        <img src="images/BANNER1.jpg" alt="gambar 1" style="width:100%; height: 800px">
       </div>
       <div class="item">
-        <img src="images/MURID2.jpg" alt="gambar 2" style="width:100%; height: 500px">
+        <img src="images/BANNER2.png" alt="gambar 2" style="width:100%; height: 800px">
       </div>
       <div class="item">
-        <img src="images/MURID3.jpg" alt="gambar 3" style="width:100%; height: 500px">
+        <img src="images/BANNER3.jpg" alt="gambar 3" style="width:100%; height: 800px">
       </div>
     </div>
 
@@ -75,45 +76,45 @@
   <!-- Event -->
   <div class="jumbotron">
     <div class="container">
-      <h1>EVENT SEKOLAH</h1>
-      <!-- Thumbniell-->
+      <h1>EVENT SEKOLAHKU</h1>
+      <!-- Thumbnail-->
 
       <div class="row margin-atas">
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail">
-            <img src="images/FUTSALL.jpg" alt="Lomba Futsal" he>
+            <img src="images/EVENT2.jpg" alt="Dies Natalis" style="width:100%; height: 300px">
             <div class="caption">
-              <h3>Lomba Futsal antar kelas</h3>
+              <h3>Dies Natalis</h3>
 
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail">
-            <img src="images/basket.jpg" alt="Lomba Basket">
+            <img src="images/EVENT4.jpg" alt="Bakti Sosial" style="width:100%; height: 300px">
             <div class="caption">
-              <h3>Lomba Basket antar smk </h3>
+              <h3>Bakti Sosial </h3>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail">
-            <img src="images/tanaman.jpg" alt="Hari Pohon Sedunia">
+            <img src="images/EVENT3.jpg" alt="Sekolahku Championship" style="width:100%; height: 300px">
             <div class="caption">
-              <h3>Memperingati Hari Pohon Sedunia</h3>
+              <h3>Sekolahku Championship</h3>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail">
-            <img src="images/voly.jpg" alt="Lomba voly">
+            <img src="images/EVENT1.jpg" alt="Classmeeting" style="width:100%; height: 300px">
             <div class="caption">
-              <h3>Lomba voly persahabatan</h3>
+              <h3>Classmeeting</h3>
             </div>
           </div>
         </div>
       </div>
-      <!-- //Thumbniell-->
+      <!-- //Thumbnail-->
     </div>
   </div>
 
@@ -123,7 +124,7 @@
   <div class="w3layouts_copy_right">
     <div class="container">
       <!-- <p>© 2018 SMK TERPADU </p> -->
-      <p>© 2018 SMK TERPADU | Design by <a href="http://w3layouts.com">W3layouts.</a></p>
+      <p>©2023 Sekolahku</p>
     </div>
   </div>
   <!-- //footer -->
@@ -131,7 +132,7 @@
   <!-- js-scripts -->
   <!-- js-files -->
   <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
   <!-- //js-files -->
   <!-- Baneer-js -->
 
@@ -157,14 +158,7 @@
   </script>
   <script type="text/javascript">
     $(document).ready(function() {
-      /*
-      	var defaults = {
-      	containerID: 'toTop', // fading element id
-      	containerHoverID: 'toTopHover', // fading element hover id
-      	scrollSpeed: 1200,
-      	easingType: 'linear' 
-      	};
-      */
+
       $().UItoTop({
         easingType: 'easeOutQuart'
       });

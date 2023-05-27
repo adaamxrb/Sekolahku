@@ -9,7 +9,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-			<h1><a class="navbar-brand" href="index.php"><i class="fa fa-leanpub" aria-hidden="true"></i> SekolahKu</a></h1>
+			<h1><a class="navbar-brand" href="index.php"><i class="fa fa-leanpub" aria-hidden="true"></i> Sekolahku</a></h1>
 
 			</div>
 			<div class="w3layouts_header_right ">
@@ -26,7 +26,7 @@
 				//echo "<a href='./Login'> Login </a>";
 				echo "
 				<ul class='agile_forms'>
-				<li><a class='active' href='#' data-toggle='modal' data-target='#myModal2'><i class='fa fa-sign-in' aria-hidden='true'></i> Masuk </a> </li>
+				<li><a class='' href='#' data-toggle='modal' data-target='#myModal2'><i class='fa fa-sign-in' aria-hidden='true'></i> Masuk </a> </li>
 				<li><a href='#' data-toggle='modal' data-target='#myModal3'><i class='fa fa-pencil-square-o' aria-hidden='true'></i> Daftar </a> </li>
 				</ul>";
 			}
@@ -68,7 +68,7 @@
 								</tr>
 								
 								<tr>
-									<td><a class='dropdown-item' href='Admin/mata_pelajaran.php'>Mata Pelajaran</a></td>
+									<td><a class='dropdown-item' href='Admin/matapelajaran.php'>Mata Pelajaran</a></td>
 								</tr>
 																
 								<tr>
@@ -141,12 +141,12 @@
 			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 				<nav class="link-effect-2" id="link-effect-2">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.php" class="effect-3">Beranda</a></li>
+						<li class=""><a href="index.php" class="effect-3">Beranda</a></li>
 						<li> <a class='effect-3 scroll' data-toggle='dropdown'>Jurusan<span class='caret'></span> </a>
 							<ul class='dropdown-menu'>
-								<li><a href='akutansi.php' >Akutansi</a></li>
-								<li><a href='rpl.php' >Rekayasa Perangkat Lunak</a></li>
-								<li><a href='otomotif.php' >Otomotif</a></li>
+								<li><a href='ipa.php' >IPA</a></li>
+								<li><a href='ips.php' >IPS</a></li>
+								<li><a href='bahasa.php' >Bahasa</a></li>
 							</ul>
 						</li>
 						<li><a href="fasilitas.php" class="effect-3">Fasilitas </a></li>
