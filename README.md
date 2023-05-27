@@ -1,5 +1,5 @@
 
-![Logo](https://ibb.co/92DfP4h)
+![Logo](banner.png)
 
 
 # Sekolahku
