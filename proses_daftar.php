@@ -3,8 +3,8 @@ include 'koneksi.php';
 
 $password = md5($_POST['password']);
 
-$sql = mysql_query("SELECT * FROM `akun` WHERE username = '$_POST[username]' ") or die(mysql_error());
-if(mysql_num_rows($sql) == 0)
+$sql = mysqli_query($koneksi,"SELECT * FROM `akun` WHERE username = '$_POST[username]' ") or die(mysqli_error());
+if(mysqli_num_rows($sql) == 0)
 {
 	$input_akun="INSERT INTO `akun` (`username`, `password`, `level`) VALUES ('$_POST[username]', '$password', '3');";
 
@@ -14,8 +14,8 @@ if(mysql_num_rows($sql) == 0)
 				window.alert('Berhasil Registrasi')
 				window.location.href='index.php';
 			</SCRIPT>");
-	(mysql_query($input_akun));
-	(mysql_query($input_murid));
+	(mysqli_query($koneksi, $input_akun));
+	(mysqli_query($koneksi, $input_murid));
 }	
 else
 {
@@ -24,6 +24,4 @@ else
 				window.location.href='index.php';
 			</SCRIPT>");
 }
-
-
 ?>

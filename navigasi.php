@@ -179,13 +179,6 @@
 							</div>
 						</form>
 					</div>
-					<div class="login-social-grids">
-						<ul>
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-rss"></i></a></li>
-						</ul>
-					</div>
 					<p><a href="#" data-toggle="modal" data-target="#myModal3" > Don't have an account?</a></p>
 				</div>
 			</div>
@@ -249,9 +242,9 @@
     <tr>
     	<td>Kelas : </td>
         <td><select name="Kelas">
-    			<option value="1" selected> 10 </option>
-				<option value="2"> 11 </option>
-				<option value="3"> 12 </option>
+    			<option value="10" selected> 10 </option>
+				<option value="11"> 11 </option>
+				<option value="12"> 12 </option>
 			</select>
       	</td>
  	</tr>

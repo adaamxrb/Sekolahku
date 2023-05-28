@@ -48,6 +48,8 @@
 
 
 	<div id="Input Nilai">
+		<br>
+	<h3 class="w3l-title"> Nilai </h3>
 		<div class="container roma-batasan">
 			<form action="proses_guru.php" method="post">
 				Nama Mata Pelajaran : <input type="text" name="Nama_Mata_Pelajaran" value="<?php echo $_POST['Mata_Pelajaran']; ?>" Readonly> <br><br>
@@ -81,8 +83,8 @@
 							echo "
 							<td> $data_murid[nisn] </td>
 							<td class='text-left'> <input type='text' name='$N' value='$data_murid[nama_murid]' Readonly> </td>			
-							<td align='center'> <input type='text' name='$T' value='$nilai_UTS' maxlength='3' size='1'/>  </td>
-							<td align='center'> <input type='text' name='$A' value='$nilai_UAS' maxlength='3' size='1'/> </td>
+							<td align='center'> <input type='text' name='$T' value='$nilai_UTS' maxlength='3' size='2'/>  </td>
+							<td align='center'> <input type='text' name='$A' value='$nilai_UAS' maxlength='3' size='2'/> </td>
 							</TR>
 						";
 							$N++;
