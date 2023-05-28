@@ -4,7 +4,7 @@
 
 # Sekolahku
 
-Sekolahku merupakan website yang dibuat untuk memberikan informasi seputar sejarah sekolah, visi & misi, jurusan apa saja yang ada di sekolah, fasilitas yang diberikan dan event sekolah. Website ini memiliki 3 sistem login yang tentunya tampilan dan kegunaannya berbeda - beda. Yang pertama untuk login admin kegunaannya dapat mengkontrol akun, manajemen akun, melihat email yang telah mengirim pesan, dan dapat memanajemen mata pelajaran. Selanjutnya untuk login guru kegunaannya dapat memanajemen nilai murid yang memilih mata pelajarannya. Kemudian untuk login murid kegunaannya untuk melihat nilai - nilai pada mata pelajaran pilihan mereka yang telah dimanajemen oleh guru pada website Sekolahku. Itulah beberapa kegunaan pada masing - masing login, tentunya akan mempermudah dan berguna untuk sekolah - sekolah di Indonesia.
+Sekolahku merupakan website yang dibuat untuk memberikan informasi seputar sejarah sekolah, visi & misi, jurusan apa saja yang ada di sekolah, fasilitas yang diberikan dan event sekolah. Website ini memiliki 3 Level akun yang tentunya mempunyai hak akses berbeda - beda. Yang pertama untuk Administrator kegunaannya dapat mengkontrol akun, manajemen akun, melihat email yang telah mengirim pesan, dan dapat memanajemen mata pelajaran. Selanjutnya untuk Guru kegunaannya dapat memanajemen nilai murid yang memilih mata pelajarannya. Kemudian untuk Murid mempunyai akses untuk melihat nilai - nilai pada mata pelajaran pilihan mereka yang telah dimanajemen oleh guru pada website Sekolahku. Itulah beberapa hak akses pada masing – masing level, tentunya akan mempermudah dan berguna untuk sekolah - sekolah di Indonesia.
 ## Akun
 
 | User             |Password                                        | 
