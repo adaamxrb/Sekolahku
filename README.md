@@ -13,20 +13,23 @@ Sekolahku merupakan website yang dibuat untuk memberikan informasi seputar sejar
 - Manajemen Nilai
 - Enkripsi Password (md5)
 
+## Panduan Dan Instalasi
+Panduan dan instalasi dapat dilihat dalam file Documentation
+
 ## Akun
 
 | User             |Password                                        | 
 | ----------------- | ------------------------------------------------------------------ |
 | admin | admin123 |
-| moya | buguru 
-| budi | budimon |
+| Silvia | 101 
+| Rizky | 21081010001 |
 
 ## Jenis Akun
 | User             |Jenis Akun                                        | 
 | ----------------- | ------------------------------------------------------------------ |
 | admin | Administrator |
-| moya | Guru 
-| budi | Murid |
+| Silvia | Guru 
+| Rizky | Murid |
 
 
 
