@@ -46,7 +46,7 @@
 			<div class="team-w3l-grid margin-atas">
 				<div class="col-md-4 col-xs-4 t1">
 					<div class="about_img">
-						<a href="akun.php"> <img src="image/a.png" class="about_img" width="250" height="250">
+						<a href="akun.php"> <img src="image/akun.png" class="about_img" width="350" height="350">
 							<p class="detail_img"> Akun <p>
 						</a>
 					</div>
@@ -54,7 +54,7 @@
 
 				<div class="col-md-4 col-xs-4 t2">
 					<div class="about_img">
-						<a href="murid.php"> <img src="image/m.png" class="about_img" width="250" height="250">
+						<a href="murid.php"> <img src="image/murid.png" class="about_img" width="350" height="350">
 							<p class="detail_img"> Murid <p>
 						</a>
 					</div>
@@ -62,7 +62,7 @@
 
 				<div class="col-md-4 col-xs-4 t3">
 					<div class="about_img">
-						<a href="guru.php"> <img src="image/g.png" class="about_img" width="250" height="250">
+						<a href="guru.php"> <img src="image/guru.png" class="about_img" width="350" height="350">
 							<p class="detail_img"> Guru <p>
 						</a>
 					</div>
@@ -75,7 +75,7 @@
 			<div class="team-w3l-grid grid-2-team">
 				<div class="col-md-4 col-xs-4 t1">
 					<div class="about_img">
-						<a href="nilai.php"> <img src="image/n.png" class="about_img" width="250" height="250">
+						<a href="nilai.php"> <img src="image/nilai.png" class="about_img" width="350" height="350">
 							<p class="detail_img"> Nilai <p>
 						</a>
 					</div>
@@ -83,7 +83,7 @@
 
 				<div class="col-md-4 col-xs-4 t2">
 					<div class="about_img">
-						<a href="pesan.php"> <img src="image/e.png" class="about_img" width="250" height="250">
+						<a href="pesan.php"> <img src="image/email.png" class="about_img" width="350" height="350">
 							<p class="detail_img"> Email <p>
 						</a>
 					</div>
@@ -91,7 +91,7 @@
 
 				<div class="col-md-4 col-xs-4 t2">
 					<div class="about_img">
-						<a href="matapelajaran.php"> <img src="image/mpl.png" class="about_img" width="250" height="250">
+						<a href="matapelajaran.php"> <img src="image/matapelajaran.png" class="about_img" width="350" height="350">
 							<p class="detail_img"> Mata Pelajaran <p>
 						</a>
 					</div>
