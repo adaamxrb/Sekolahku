@@ -35,7 +35,7 @@ Sekolahku merupakan website yang dibuat untuk memberikan informasi seputar sejar
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](Docs/ss_home.jpg)
 
 
 ## Tim Kami
