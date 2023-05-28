@@ -14,7 +14,7 @@ Sekolahku merupakan website yang dibuat untuk memberikan informasi seputar sejar
 - Enkripsi Password (md5)
 
 ## Panduan Dan Instalasi
-Panduan dan instalasi dapat dilihat dalam file Documentation
+Panduan dan instalasi dapat dilihat dalam file Documentation.pdf
 
 ## Akun
 
