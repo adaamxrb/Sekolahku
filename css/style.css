@@ -112,14 +112,14 @@ nav.navbar.navbar-default {
 	background: none;
 }
 .navbar-default .navbar-nav > li > a {
-	color: #fff;
+	color: #000000;
 }
 .navbar-default .navbar-nav > .active.open > a:focus {
 	background: transparent;
 	color: #fff;
 }
 a.navbar-brand {
-	color: #fff !important;
+	color: #000000 !important;
 	padding: 0;
 	font-size: 0.9em;
 	font-weight: 700;
@@ -191,7 +191,7 @@ ul.agile_forms {
 }
 ul.agile_forms li a {
 	background: #ffb71c;
-	color: #fff;
+	color: #000000;
 	font-size: 0.9em;
 	padding: 8px 1em;
 	text-transform: uppercase;
@@ -203,7 +203,7 @@ ul.agile_forms li a {
 	-ms-border-radius: 30px;
 }
 ul.agile_forms li a:hover {
-	background: #fff;
+	background: #000000;
 	color: #000;
 }
 ul.agile_forms li {
@@ -257,7 +257,7 @@ ul.agile_forms li {
 }
 .play-icon i {
 	font-size: 4em;
-	color: #fff;
+	color: #000000;
 }
 .play-icon:focus {
 	outline: none;

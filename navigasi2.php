@@ -9,7 +9,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-			<h1><a class="navbar-brand" href="../index.php"><i class="fa fa-leanpub" aria-hidden="true"></i> scholarly</a></h1>
+			<h1><a class="navbar-brand" href="../index.php"><i class="fa fa-leanpub" aria-hidden="true"></i> SekolahKu</a></h1>
 
 			</div>
 			<div class="w3layouts_header_right ">
@@ -23,7 +23,6 @@
 			@session_start();
 			if (empty($_SESSION['username']))
 			{
-				//echo "<a href='./Login'> Login </a>";
 				echo "
 				<ul class='agile_forms'>
 				<li><a class='active' href='#' data-toggle='modal' data-target='#myModal2'><i class='fa fa-sign-in' aria-hidden='true'></i> Masuk </a> </li>
@@ -144,9 +143,9 @@
 						<li class="active"><a href="../index.php" class="effect-3">Beranda</a></li>
 						<li> <a class='effect-3 scroll' data-toggle='dropdown'>Jurusan<span class='caret'></span> </a>
 							<ul class='dropdown-menu'>
-								<li><a href='../ipa.php' >Akutansi</a></li>
-								<li><a href='../rpl.php' >Rekayasa Perangkat Lunak</a></li>
-								<li><a href='../otomotif.php' >Otomotif</a></li>
+								<li><a href='../ipa.php' >Ilmu Pengetahuan Alam</a></li>
+								<li><a href='../ips.php' >Ilmu Pengetahuan Sosial</a></li>
+								<li><a href='../bahasa.php' >Bahasa</a></li>
 							</ul>
 						</li>
 						<li><a href="../fasilitas.php" class="effect-3">Fasilitas </a></li>
@@ -172,7 +171,7 @@
 				<div class="signin-form profile">
 					<h3 class="agileinfo_sign">Masuk</h3>	
 					<div class="login-form">
-						<form action="../proses_login.php" method="post">
+						<form action="proses_login.php" method="post">
 							<input type="text" name="username" placeholder="Username" required="">
 							<input type="password" name="password" placeholder="Password" required="">
 							<div class="tp">
@@ -240,9 +239,9 @@
     <tr>
     	<td> Jurusan : </td>
         <td> <select name="Jurusan">
-    			<option value="AP" selected> AP </option>
-				<option value="RPL"> RPL </option>
-				<option value="TKR"> TKR </option>
+    			<option value="IPA" selected> IPA </option>
+				<option value="IPS"> IPS </option>
+				<option value="BHS"> BHS </option>
 			 </select>
        	</td>
     </tr>

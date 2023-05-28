@@ -1,9 +1,11 @@
+<?php
+include "../koneksi.php";
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
 	<title>Sekolahku</title>
-	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Sekolahku" />
@@ -16,7 +18,6 @@
 			window.scrollTo(0, 1);
 		}
 	</script>
-	<!--// Meta tag Keywords -->
 	<!-- css files -->
 	<link rel="stylesheet" href="../css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
 	<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" /> <!-- Style-CSS -->
@@ -37,79 +38,73 @@
 
 	<div class="clearfix"> </div>
 	<!-- //Modal2 -->
+	<!-- Laporan Nilai -->
 
-	<!-- Admin Pannel -->
-	<div id="Admin_Pannel">
-		<div class="container">
-            <br>
-			<h3 class="w3l-title"> Admin Panel </h3>
-			<div class="team-w3l-grid margin-atas">
-				<div class="col-md-4 col-xs-4 t1">
-					<div class="about_img">
-						<a href="akun.php"> <img src="image/a.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Akun <p>
-						</a>
-					</div>
-				</div>
+	<div id="Laporan Nilai">
+		<div class="container roma-batasan">
 
-				<div class="col-md-4 col-xs-4 t2">
-					<div class="about_img">
-						<a href="murid.php"> <img src="image/m.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Murid <p>
-						</a>
-					</div>
-				</div>
+			<?php
+			$query = mysqli_query($koneksi, "select * from murid where username='$_SESSION[username]'");
+			$data = mysqli_fetch_array($query);
+			?>
 
-				<div class="col-md-4 col-xs-4 t3">
-					<div class="about_img">
-						<a href="guru.php"> <img src="image/g.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Guru <p>
-						</a>
-					</div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
+			<table class="table-condensed">
+				<tr>
+					<td> Nama </td>
+					<td> : </td>
+					<td> <input type="text" name="no_tlp" id="No_HP" value="<?php echo $data['nama_murid']; ?>" Readonly> </td>
+				</tr>
+				<tr>
+					<td> Kelas </td>
+					<td> : </td>
+					<td> <input type="text" name="no_tlp" id="No_HP" value="<?php echo $data['kelas']; ?>" Readonly> </td>
+				<tr>
+					<td> Jurusan </td>
+					<td> : </td>
+					<td> <input type="text" name="no_tlp" id="No_HP" value="<?php echo $data['jurusan']; ?>" Readonly> </td>
+				</tr>
+			</table>
 
 			<br>
 
-			<div class="team-w3l-grid grid-2-team">
-				<div class="col-md-4 col-xs-4 t1">
-					<div class="about_img">
-						<a href="nilai.php"> <img src="image/n.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Nilai <p>
-						</a>
-					</div>
-				</div>
+			<table border=1 class="table table-bordered">
+				<tr>
+					<td width="150" align="center">Mata Pelajaran</td>
+					<td width="80" align="center">Nilai UTS</td>
+					<td width="80" align="center">Nilai UAS</td>
+				<tr>
 
-				<div class="col-md-4 col-xs-4 t2">
-					<div class="about_img">
-						<a href="pesan.php"> <img src="image/e.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Email <p>
-						</a>
-					</div>
-				</div>
+					<?php
+					$Nama_Murid = $data['nama_murid'];
+					$Kelas 		= $data['kelas'];
+					$Jurusan	= $data['jurusan'];
+					$tampil = "SELECT * FROM nilai WHERE nama_murid = '$Nama_Murid' AND kelas = '$Kelas' AND jurusan = '$Jurusan'";
+					$hasil = mysqli_query($koneksi, $tampil);
 
-				<div class="col-md-4 col-xs-4 t2">
-					<div class="about_img">
-						<a href="matapelajaran.php"> <img src="image/mpl.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Mata Pelajaran <p>
-						</a>
-					</div>
-				</div>
-			</div>
+					while ($data = mysqli_fetch_array($hasil)) {
+						echo "
+						<tr>
+							<td> $data[nama_matapelajaran]</td>
+							<td align='center'>$data[nilai_UTS]</td>
+							<td align='center'>$data[nilai_UAS]</td>
+						<tr>
+					";
+					}
 
-			<div class="clearfix margin-bawah"></div>
+					?>
+
+			</table>
 
 		</div>
 	</div>
 
-	<!-- //Admin Pannel -->
+	<!-- //Laporan Nilai -->
 
 	<!-- footer -->
 
 	<div class="w3layouts_copy_right">
 		<div class="container">
-			<p>©2023 Sekolahku</p>
+			<p>©2023 Sekolahku</a></p>
 		</div>
 	</div>
 	<!-- //footer -->

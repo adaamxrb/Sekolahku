@@ -19,4 +19,4 @@ else
 
 (mysqli_query($koneksi, $sqlstr));
 
-header('location:mata_pelajaran.php');
+header('location:matapelajaran.php');

@@ -49,8 +49,10 @@ include "../koneksi.php";
 	?>
 
 	<div id="Input Nilai">
+	<br>
+		<h3 class="w3l-title"> Nilai </h3>
 		<div class="container roma-batasan">
-			<form action="process_guru.php" method="post">
+			<form action="proses_guru.php" method="post">
 				Nama Mata Pelajaran : <input type="text" name="Nama_Mata_Pelajaran" value="<?php echo $_POST['Mata_Pelajaran']; ?>" Readonly> <br><br>
 				Jurusan : <input type="text" name="Jurusan" value="<?php echo $data_mapel['jurusan']; ?>" size='2' Rseadonly><br><br>
 				Kelas : <input type="text" name="Kelas" value="<?php echo $data_mapel['kelas']; ?>" size='2' Readonly><br><br>

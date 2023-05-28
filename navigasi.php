@@ -23,7 +23,6 @@
 			@session_start();
 			if (empty($_SESSION['username']))
 			{
-				//echo "<a href='./Login'> Login </a>";
 				echo "
 				<ul class='agile_forms'>
 				<li><a class='' href='#' data-toggle='modal' data-target='#myModal2'><i class='fa fa-sign-in' aria-hidden='true'></i> Masuk </a> </li>
@@ -240,9 +239,9 @@
     <tr>
     	<td> Jurusan : </td>
         <td> <select name="Jurusan">
-    			<option value="AP" selected> AP </option>
-				<option value="RPL"> RPL </option>
-				<option value="TKR"> TKR </option>
+    			<option value="IPA" selected> IPA </option>
+				<option value="IPS"> IPS </option>
+				<option value="BHS"> BHS </option>
 			 </select>
        	</td>
     </tr>

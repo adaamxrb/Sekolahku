@@ -3,7 +3,6 @@
 
 <head>
 	<title>Sekolahku</title>
-	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Sekolahku" />
@@ -16,7 +15,6 @@
 			window.scrollTo(0, 1);
 		}
 	</script>
-	<!--// Meta tag Keywords -->
 	<!-- css files -->
 	<link rel="stylesheet" href="../css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
 	<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" /> <!-- Style-CSS -->
@@ -34,82 +32,79 @@
 <body>
 
 	<?php include('../navigasi2.php'); ?>
-
 	<div class="clearfix"> </div>
-	<!-- //Modal2 -->
 
-	<!-- Admin Pannel -->
-	<div id="Admin_Pannel">
-		<div class="container">
-            <br>
-			<h3 class="w3l-title"> Admin Panel </h3>
-			<div class="team-w3l-grid margin-atas">
-				<div class="col-md-4 col-xs-4 t1">
-					<div class="about_img">
-						<a href="akun.php"> <img src="image/a.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Akun <p>
-						</a>
-					</div>
-				</div>
+	<!-- Input Nilai -->
+	<?php
+	include "../koneksi.php";
+	$cari_guru = "SELECT * FROM `guru` WHERE username= '$_SESSION[username]' ";
+	$hasil_guru = mysqli_query($koneksi, $cari_guru);
+	$data_guru = mysqli_fetch_array($hasil_guru);
 
-				<div class="col-md-4 col-xs-4 t2">
-					<div class="about_img">
-						<a href="murid.php"> <img src="image/m.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Murid <p>
-						</a>
-					</div>
-				</div>
+	$mapel = "SELECT * FROM `mata_pelajaran` WHERE nip = '$data_guru[nip]' and nama_matapelajaran = '$_POST[Mata_Pelajaran]';";
+	$hasil_mapel = mysqli_query($koneksi, $mapel);
+	$data_mapel = mysqli_fetch_array($hasil_mapel)
+	?>
 
-				<div class="col-md-4 col-xs-4 t3">
-					<div class="about_img">
-						<a href="guru.php"> <img src="image/g.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Guru <p>
-						</a>
-					</div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
 
-			<br>
+	<div id="Input Nilai">
+		<div class="container roma-batasan">
+			<form action="proses_guru.php" method="post">
+				Nama Mata Pelajaran : <input type="text" name="Nama_Mata_Pelajaran" value="<?php echo $_POST['Mata_Pelajaran']; ?>" Readonly> <br><br>
+				Jurusan : <input type="text" name="Jurusan" value="<?php echo $data_mapel['jurusan']; ?>" size='2' Readonly><br><br>
+				Kelas : <input type="text" name="Kelas" value="<?php echo $data_mapel['kelas']; ?>" size='2' Readonly><br><br>
 
-			<div class="team-w3l-grid grid-2-team">
-				<div class="col-md-4 col-xs-4 t1">
-					<div class="about_img">
-						<a href="nilai.php"> <img src="image/n.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Nilai <p>
-						</a>
-					</div>
-				</div>
+				<table class="table table-bordered">
+					<tr>
+						<td width="150" align="center">NISN</td>
+						<td width="150" align="center">Nama Murid</td>
+						<td width="80" align="center">Nilai UTS</td>
+						<td width="80" align="center">Nilai UAS</td>
+					<tr>
 
-				<div class="col-md-4 col-xs-4 t2">
-					<div class="about_img">
-						<a href="pesan.php"> <img src="image/e.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Email <p>
-						</a>
-					</div>
-				</div>
+						<?php
+						$tampil_murid = "SELECT * FROM murid WHERE jurusan = '$data_mapel[jurusan]' and kelas = '$data_mapel[kelas]'";
+						$hasil_murid = mysqli_query($koneksi, $tampil_murid);
 
-				<div class="col-md-4 col-xs-4 t2">
-					<div class="about_img">
-						<a href="matapelajaran.php"> <img src="image/mpl.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Mata Pelajaran <p>
-						</a>
-					</div>
-				</div>
-			</div>
+						$N = 1;
+						$T = 10000;
+						$A = 20000;
 
-			<div class="clearfix margin-bawah"></div>
+						while ($data_murid = mysqli_fetch_array($hasil_murid)) {
+							$tampil_nilai = "SELECT * FROM `nilai` WHERE nama_murid = '$data_murid[nama_murid]' and jurusan = '$data_murid[jurusan]' and kelas = '$data_mapel[kelas]' and nama_matapelajaran = '$_POST[Mata_Pelajaran]'";
+							$hasil_nilai = mysqli_query($koneksi, $tampil_nilai);
+							$data_nilai = mysqli_fetch_array($hasil_nilai);
 
+							$nilai_UTS = !isset($data_nilai['nilai_UTS']) ? "" : $data_nilai['nilai_UTS'];
+							$nilai_UAS = !isset($data_nilai['nilai_UAS']) ? "" : $data_nilai['nilai_UAS'];
+
+							echo "
+							<td> $data_murid[nisn] </td>
+							<td class='text-left'> <input type='text' name='$N' value='$data_murid[nama_murid]' Readonly> </td>			
+							<td align='center'> <input type='text' name='$T' value='$nilai_UTS' maxlength='3' size='1'/>  </td>
+							<td align='center'> <input type='text' name='$A' value='$nilai_UAS' maxlength='3' size='1'/> </td>
+							</TR>
+						";
+							$N++;
+							$T++;
+							$A++;
+						}
+
+						?>
+
+				</table>
+				<button class="btn btn-primary"> Simpan </button>
+			</form>
 		</div>
 	</div>
 
-	<!-- //Admin Pannel -->
+	<!-- //Laporan Nilai -->
 
 	<!-- footer -->
 
 	<div class="w3layouts_copy_right">
 		<div class="container">
-			<p>©2023 Sekolahku</p>
+			<p>©2023 Sekolahku</a></p>
 		</div>
 	</div>
 	<!-- //footer -->

@@ -153,7 +153,7 @@
 					</table>
 
 					<button class="btn btn-primary"> Simpan </button>
-					<a href="mata_pelajaran.php" class="btn btn-primary"> Batal </a>
+					<a href="matapelajaran.php" class="btn btn-primary"> Batal </a>
 				</form>
 
 			</div>

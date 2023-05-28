@@ -3,7 +3,6 @@
 
 <head>
 	<title>Sekolahku</title>
-	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Sekolahku" />
@@ -16,7 +15,6 @@
 			window.scrollTo(0, 1);
 		}
 	</script>
-	<!--// Meta tag Keywords -->
 	<!-- css files -->
 	<link rel="stylesheet" href="../css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
 	<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" /> <!-- Style-CSS -->
@@ -34,82 +32,51 @@
 <body>
 
 	<?php include('../navigasi2.php'); ?>
-
 	<div class="clearfix"> </div>
-	<!-- //Modal2 -->
 
-	<!-- Admin Pannel -->
-	<div id="Admin_Pannel">
-		<div class="container">
-            <br>
-			<h3 class="w3l-title"> Admin Panel </h3>
-			<div class="team-w3l-grid margin-atas">
-				<div class="col-md-4 col-xs-4 t1">
-					<div class="about_img">
-						<a href="akun.php"> <img src="image/a.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Akun <p>
-						</a>
-					</div>
-				</div>
+	<!-- Pilih Mata Pelajaran -->
+	<div id="Pilih_Mata_Pelajaran">
+		<div class="container roma-batasan">
+			<form action="Nilai.php" method="post">
+				<table class="table roma-table" border=0>
+					<tr>
+						<td>Mata Pelajaran :</td>
+						<td>
+							<select name="Mata_Pelajaran">
 
-				<div class="col-md-4 col-xs-4 t2">
-					<div class="about_img">
-						<a href="murid.php"> <img src="image/m.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Murid <p>
-						</a>
-					</div>
-				</div>
+								<?php
+								include('../koneksi.php');
 
-				<div class="col-md-4 col-xs-4 t3">
-					<div class="about_img">
-						<a href="guru.php"> <img src="image/g.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Guru <p>
-						</a>
-					</div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
+								$cari_guru = "SELECT * FROM `guru` WHERE username= '$_SESSION[username]' ";
+								$hasil_guru = mysqli_query($koneksi, $cari_guru);
+								$data_guru = mysqli_fetch_array($hasil_guru);
 
-			<br>
+								$tampil = "SELECT * FROM `mata_pelajaran` WHERE nip = '$data_guru[nip]'";
+								$hasil = mysqli_query($koneksi, $tampil);
 
-			<div class="team-w3l-grid grid-2-team">
-				<div class="col-md-4 col-xs-4 t1">
-					<div class="about_img">
-						<a href="nilai.php"> <img src="image/n.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Nilai <p>
-						</a>
-					</div>
-				</div>
+								while ($data = mysqli_fetch_array($hasil)) {
+									echo "	<option value='$data[nama_matapelajaran]'>$data[nama_matapelajaran]</option> ";
+								}
 
-				<div class="col-md-4 col-xs-4 t2">
-					<div class="about_img">
-						<a href="pesan.php"> <img src="image/e.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Email <p>
-						</a>
-					</div>
-				</div>
+								?>
+							</select>
+						</td>
+					</tr>
 
-				<div class="col-md-4 col-xs-4 t2">
-					<div class="about_img">
-						<a href="matapelajaran.php"> <img src="image/mpl.png" class="about_img" width="250" height="250">
-							<p class="detail_img"> Mata Pelajaran <p>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="clearfix margin-bawah"></div>
-
+					<tr>
+						<td colspan=2 align="left"><button class="btn btn-primary"> Tampilkan </button> </td>
+					</tr>
+				</table>
+			</form>
 		</div>
 	</div>
-
-	<!-- //Admin Pannel -->
+	<!-- //Pilih Pata Pelajaran -->
 
 	<!-- footer -->
 
 	<div class="w3layouts_copy_right">
 		<div class="container">
-			<p>©2023 Sekolahku</p>
+			<p>©2018 Sekolahku</p>
 		</div>
 	</div>
 	<!-- //footer -->

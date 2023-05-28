@@ -32,7 +32,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- contact -->
 <div id="mail" class="contact">
 	<div class="container">
-		<h3 class="w3l-title">Contact Us</h3>	
+		<h3 class="w3l-title">Kontak Kami</h3>	
 			<div class="contact-grid1">
 				<div class="contact-top1">
 					<form action="proses_kirim.php" method="post">
@@ -52,7 +52,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<label>Pesan*</label>
 							<textarea placeholder name="Message" required></textarea>
 						</div>
-							<input type="submit" value="Send">
+							<input type="submit" value="Kirim">
 					</form>
 				</div>
 			</div>
