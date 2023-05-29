@@ -15,6 +15,7 @@ Sekolahku merupakan website yang dibuat untuk memberikan informasi seputar sejar
 
 ## Panduan Dan Instalasi
 Panduan dan instalasi dapat dilihat dalam file [Documentation](Documentation.pdf)
+Download Sample Database [Disini](database/sekolahku.sql)
 
 ## Akun
 
