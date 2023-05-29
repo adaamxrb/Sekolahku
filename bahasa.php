@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="zxx">
+<html>
 <head>
 <title>Sekolahku</title>
 <!-- Meta tag Keywords -->
@@ -15,7 +14,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
 <link rel="stylesheet" href="css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
 <link rel="stylesheet" href="css/swipebox.css">
-<link rel="stylesheet" href="css/roma.css">
+<link rel="stylesheet" href="css/my.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 <link rel="stylesheet" href="css/jquery-ui.css" />
 <!-- //css files -->

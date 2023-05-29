@@ -143,8 +143,8 @@
 						<li class=""><a href="index.php" class="effect-3">Beranda</a></li>
 						<li> <a class='effect-3 scroll' data-toggle='dropdown'>Jurusan<span class='caret'></span> </a>
 							<ul class='dropdown-menu'>
-								<li><a href='ipa.php' >IPA</a></li>
-								<li><a href='ips.php' >IPS</a></li>
+								<li><a href='ipa.php' >Ilmu Pengetahuan Alam</a></li>
+								<li><a href='ips.php' >Ilmu Pengetahuan Sosial</a></li>
 								<li><a href='bahasa.php' >Bahasa</a></li>
 							</ul>
 						</li>

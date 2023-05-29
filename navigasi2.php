@@ -140,7 +140,7 @@
 			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 				<nav class="link-effect-2" id="link-effect-2">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="../index.php" class="effect-3">Beranda</a></li>
+						<li class=""><a href="../index.php" class="effect-3">Beranda</a></li>
 						<li> <a class='effect-3 scroll' data-toggle='dropdown'>Jurusan<span class='caret'></span> </a>
 							<ul class='dropdown-menu'>
 								<li><a href='../ipa.php' >Ilmu Pengetahuan Alam</a></li>
