@@ -14,8 +14,8 @@ Sekolahku merupakan website yang dibuat untuk memberikan informasi seputar sejar
 - Enkripsi Password (md5)
 
 ## Panduan Dan Instalasi
-Panduan dan instalasi dapat dilihat dalam file [Documentation](Documentation.pdf)
-Download Sample Database [Disini](database/sekolahku.sql)
+- Panduan dan instalasi dapat dilihat dalam file [Documentation](Documentation.pdf)
+- Download Sample Database [Disini](database/sekolahku.sql)
 
 ## Akun
 
