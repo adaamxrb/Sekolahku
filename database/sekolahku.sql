@@ -7,6 +7,8 @@
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
+CREATE DATABASE sekolahku;
+USE sekolahku;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -18,7 +20,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `school`
+-- Database: `sekolahku`
 --
 
 -- --------------------------------------------------------
@@ -70,9 +72,9 @@ INSERT INTO `akun` (`username`, `password`, `level`) VALUES
 ('Rizal', '809b97a059259df1b93d5e49095f0bea', 3),
 ('Rizki', '17617608c21308137cad6ec9c9047b84', 3),
 ('Rizky', '3739ed73177ae25a5e94219ae7962728', 3),
-('silvia', '38b3eff8baf56627478ec76a704e9b52', 2),
+('Silvia', '38b3eff8baf56627478ec76a704e9b52', 2),
 ('Siti', '3d75cca79348bb70ceb938f236200571', 3),
-('wahyudi', '34ed066df378efacc9b924ec161e7639', 2),
+('Wahyudi', '34ed066df378efacc9b924ec161e7639', 2),
 ('Yoga', 'ec31338dae16dd1aa2cd0f971601ddc4', 3),
 ('Zahra', 'ab7c7e656f72787a2dfdce059cf34e83', 3);
 
@@ -96,13 +98,13 @@ CREATE TABLE `guru` (
 --
 
 INSERT INTO `guru` (`nip`, `nama_guru`, `no_hp`, `jenkel`, `agama`, `username`) VALUES
-('200101', 'Silvia Retno', '081278349023', 'Perempuan', 'Islam', 'silvia'),
+('200101', 'Silvia Retno', '081278349023', 'Perempuan', 'Islam', 'Silvia'),
 ('200102', 'Kyrie Eleison', '081287563847', 'Perempuan', 'Kristen', 'Kyrie'),
 ('200103', 'Moya Ayahab', '081267672983', 'Laki-Laki', 'Islam', 'Moya'),
 ('200201', 'Dodi Leo', '082178652098', 'Laki-Laki', 'Islam', 'Dodi'),
 ('200202', 'Nia Raisa', '083478956480', 'Perempuan', 'Islam', 'Nia'),
 ('200223', 'Budi Josua', '081278659835', 'Laki-Laki', 'Islam', 'Budi'),
-('200301', 'Wahyudi Praha', '081278243896', 'Laki-Laki', 'Buddha', 'wahyudi'),
+('200301', 'Wahyudi Praha', '081278243896', 'Laki-Laki', 'Buddha', 'Wahyudi'),
 ('200302', 'Andi Vian', '081278653540', 'Laki-Laki', 'Hindu', 'Andi'),
 ('200303', 'Divka Neo', '081267548977', 'Laki-Laki', 'Katolik', 'Divka');
 
@@ -325,8 +327,7 @@ CREATE TABLE `pesan` (
 --
 
 INSERT INTO `pesan` (`Tanggal`, `Subject`, `Nama`, `Email`, `No_HP`, `Isi`) VALUES
-('18-05-2018', 'Test', 'Roma Debrian', 'test@yahoo.com', 2147483647, 'This messege of ded'),
-('18-05-2018', 'Test', 'Roma Debrian', 'test@yahoo.com', 2147483647, 'ini adalah pesan kematian');
+('29-05-2023', 'Tes', 'Adham Roy Bhafiel', 'adamroy@sekolahku.com', 08123147882, 'Bismikallaahuma ahyaa wa bismika amuut');
 
 --
 -- Indexes for dumped tables
