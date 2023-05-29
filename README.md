@@ -14,8 +14,8 @@ Sekolahku merupakan website yang dibuat untuk memberikan informasi seputar sejar
 
 ## Panduan Dan Instalasi
 
-Panduan dan instalasi dapat dilihat dalam file [Docs](/Docs/SekolahkuDocs.pdf)
-Sample Database dapat diunduh [disini]
+-   Panduan dan instalasi dapat dilihat dalam file [Docs](/Docs/SekolahkuDocs.pdf)
+-   Sample Database dapat diunduh [disini](/database/sekolahku.sql)
 
 ## Akun
 
@@ -27,11 +27,15 @@ Sample Database dapat diunduh [disini]
 
 ## Jenis Akun
 
-| User   | Jenis Akun    |
-| ------ | ------------- |
-| admin  | Administrator |
-| Silvia | Guru          |
-| Rizky  | Murid         |
+| User   | Jenis Akun    | Akses                    |
+| ------ | ------------- | ------------------------ |
+| admin  | Administrator | Kontrol Akun             |
+|        |               | Manajemen Murid          |
+|        |               | Manajemen Nilai          |
+|        |               | Email                    |
+|        |               | Manajemen Mata Pelajaran |
+| Silvia | Guru          | Input Nilai              |
+| Rizky  | Murid         | Cek Nilai                |
 
 ## Hak Akses
 
