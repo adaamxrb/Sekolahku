@@ -42,6 +42,31 @@
 			<h3 class="w3l-title"> Mata Pelajaran </h3>
 			<a href="matapelajaran_tambah.php"> <button class="btn"> Tambah Mata Pelajaran </button> </a>
 			<div>
+				<form method="GET" action="">
+					<table class="table table-bordered text-center">
+						<tr>
+							<td colspan="6">
+								<b>Filter:</b>
+								<?php
+								$filterKelas = isset($_GET['kelas']) ? $_GET['kelas'] : '';
+								$filterJurusan = isset($_GET['jurusan']) ? $_GET['jurusan'] : '';?>
+								<select name="kelas">
+									<option value="">-- Pilih Kelas --</option>
+									<option value="10" <?php if ($filterKelas == '10') echo 'selected'; ?>>10</option>
+									<option value="11" <?php if ($filterKelas == '11') echo 'selected'; ?>>11</option>
+									<option value="12" <?php if ($filterKelas == '12') echo 'selected'; ?>>12</option>
+								</select>
+								<select name="jurusan">
+									<option value="">-- Pilih Jurusan --</option>
+									<option value="IPA" <?php if ($filterJurusan == 'IPA') echo 'selected'; ?>>IPA</option>
+									<option value="IPS" <?php if ($filterJurusan == 'IPS') echo 'selected'; ?>>IPS</option>
+									<option value="BHS" <?php if ($filterJurusan == 'BHS') echo 'selected'; ?>>BHS</option>
+									</select>
+								<input type="submit" value="Tampilkan">
+							</td>
+						</tr>
+					</table>
+				</form>
 				<table class="table table-bordered text-center">
 					<tr>
 						<td><b> Kode Mata Pelajaran </td>
@@ -54,7 +79,24 @@
 
 					<?php
 					include('../koneksi.php');
+
+					$filterKelas = isset($_GET['kelas']) ? $_GET['kelas'] : '';
+					$filterJurusan = isset($_GET['jurusan']) ? $_GET['jurusan'] : '';
+
 					$tampil = "SELECT * FROM `mata_pelajaran`";
+					if (!empty($filterKelas) || !empty($filterJurusan)) {
+						$tampil .= " WHERE ";
+						if (!empty($filterKelas)) {
+							$tampil .= "kelas = '$filterKelas'";
+							if (!empty($filterJurusan)) {
+								$tampil .= " AND ";
+							}
+						}
+						if (!empty($filterJurusan)) {
+							$tampil .= "jurusan = '$filterJurusan'";
+						}
+					}
+
 					$hasil = mysqli_query($koneksi, $tampil);
 
 					while ($data = mysqli_fetch_array($hasil)) {

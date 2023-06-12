@@ -92,7 +92,7 @@
 									<select name='Jurusan'>
 										<option value='IPA' selected> IPA </option>
 										<option value='IPS'> IPS </option>
-										<option value='BAHASA'> BAHASA </option>
+										<option value='BHS'> BAHASA </option>
 									</select>
 									";
 								} else if ($data['jurusan'] == "IPS") {
@@ -100,13 +100,13 @@
 									<select name='Jurusan'>
 										<option value='IPS' selected> IPS </option>
 										<option value='IPA'> IPA </option>
-										<option value='BAHASA'> BAHASA </option>
+										<option value='BHS'> BAHASA </option>
 									</select>
 									";
 								} else {
 									echo "
 									<select name='Jurusan'>
-										<option value='BAHASA' selected> BAHASA </option>
+										<option value='BHS' selected> BAHASA </option>
 										<option value='IPS'> IPS </option>
 										<option value='IPA'> IPA </option>
 									</select>

@@ -75,7 +75,7 @@
 							<td> <select name="Jurusan">
 									<option value="IPA" selected> IPA </option>
 									<option value="IPS"> IPS </option>
-									<option value="BAHASA"> BAHASA</option>
+									<option value="BHS"> BAHASA</option>
 								</select>
 							</td>
 						</tr>
