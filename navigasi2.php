@@ -161,7 +161,6 @@
 	</div>
 </div>
 
-<!-- Modal1 -->
 <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
 	<div class="modal-dialog">
 	<!-- Modal content-->
@@ -196,7 +195,7 @@
 				<div class="signin-form profile">
 					<h3 class="agileinfo_sign">Daftar</h3>	
 					<div class="login-form">
-						<form action="../proses_daftar.php" method="post" onkeyup='check();'>
+						<form action="proses_daftar.php" method="post" onkeyup='check();'>
 						   <input type="text" name="username" placeholder="Username" required="">	
 							<input type="password" name="password" id="Password1" placeholder="Password" required="">
 							<input type="password" name="password" id="Password2" placeholder="Confirm Password" required="">
@@ -258,4 +257,4 @@
 		</div>
 	</div>
 </div>
-<script src="../validasi_daftar.js"></script>
+<script src="validasi_daftar.js"></script>
