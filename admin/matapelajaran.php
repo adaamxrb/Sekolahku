@@ -33,7 +33,7 @@
 
 <body>
 
-	<?php include('../navigasi2.php'); ?>
+	<?php include "../navigasi2.php"; ?>
 	<div class="clearfix"> </div>
 
 	<!-- Mata Pelajaran -->
@@ -48,19 +48,32 @@
 							<td colspan="6">
 								<b>Filter:</b>
 								<?php
-								$filterKelas = isset($_GET['kelas']) ? $_GET['kelas'] : '';
-								$filterJurusan = isset($_GET['jurusan']) ? $_GET['jurusan'] : '';?>
+        $filterKelas = isset($_GET["kelas"]) ? $_GET["kelas"] : "";
+        $filterJurusan = isset($_GET["jurusan"]) ? $_GET["jurusan"] : "";
+        ?>
 								<select name="kelas">
 									<option value="">-- Pilih Kelas --</option>
-									<option value="10" <?php if ($filterKelas == '10') echo 'selected'; ?>>10</option>
-									<option value="11" <?php if ($filterKelas == '11') echo 'selected'; ?>>11</option>
-									<option value="12" <?php if ($filterKelas == '12') echo 'selected'; ?>>12</option>
+									<option value="10" <?php if ($filterKelas == "10") {
+             echo "selected";
+         } ?>>10</option>
+									<option value="11" <?php if ($filterKelas == "11") {
+             echo "selected";
+         } ?>>11</option>
+									<option value="12" <?php if ($filterKelas == "12") {
+             echo "selected";
+         } ?>>12</option>
 								</select>
 								<select name="jurusan">
 									<option value="">-- Pilih Jurusan --</option>
-									<option value="IPA" <?php if ($filterJurusan == 'IPA') echo 'selected'; ?>>IPA</option>
-									<option value="IPS" <?php if ($filterJurusan == 'IPS') echo 'selected'; ?>>IPS</option>
-									<option value="BHS" <?php if ($filterJurusan == 'BHS') echo 'selected'; ?>>BHS</option>
+									<option value="IPA" <?php if ($filterJurusan == "IPA") {
+             echo "selected";
+         } ?>>IPA</option>
+									<option value="IPS" <?php if ($filterJurusan == "IPS") {
+             echo "selected";
+         } ?>>IPS</option>
+									<option value="BHS" <?php if ($filterJurusan == "BHS") {
+             echo "selected";
+         } ?>>BHS</option>
 									</select>
 								<input type="submit" value="Tampilkan">
 							</td>
@@ -78,33 +91,33 @@
 					</tr>
 
 					<?php
-					include('../koneksi.php');
+     include "../koneksi.php";
 
-					$filterKelas = isset($_GET['kelas']) ? $_GET['kelas'] : '';
-					$filterJurusan = isset($_GET['jurusan']) ? $_GET['jurusan'] : '';
+     $filterKelas = isset($_GET["kelas"]) ? $_GET["kelas"] : "";
+     $filterJurusan = isset($_GET["jurusan"]) ? $_GET["jurusan"] : "";
 
-					$tampil = "SELECT * FROM `mata_pelajaran`";
-					if (!empty($filterKelas) || !empty($filterJurusan)) {
-						$tampil .= " WHERE ";
-						if (!empty($filterKelas)) {
-							$tampil .= "kelas = '$filterKelas'";
-							if (!empty($filterJurusan)) {
-								$tampil .= " AND ";
-							}
-						}
-						if (!empty($filterJurusan)) {
-							$tampil .= "jurusan = '$filterJurusan'";
-						}
-					}
+     $tampil = "SELECT * FROM `mata_pelajaran`";
+     if (!empty($filterKelas) || !empty($filterJurusan)) {
+         $tampil .= " WHERE ";
+         if (!empty($filterKelas)) {
+             $tampil .= "kelas = '$filterKelas'";
+             if (!empty($filterJurusan)) {
+                 $tampil .= " AND ";
+             }
+         }
+         if (!empty($filterJurusan)) {
+             $tampil .= "jurusan = '$filterJurusan'";
+         }
+     }
 
-					$hasil = mysqli_query($koneksi, $tampil);
+     $hasil = mysqli_query($koneksi, $tampil);
 
-					while ($data = mysqli_fetch_array($hasil)) {
-						$tampil_guru = "SELECT * FROM `guru` WHERE nip = '$data[nip]'";
-						$hasil_guru = mysqli_query($koneksi, $tampil_guru);
-						$data_guru = mysqli_fetch_array($hasil_guru);
+     while ($data = mysqli_fetch_array($hasil)) {
+         $tampil_guru = "SELECT * FROM `guru` WHERE nip = '$data[nip]'";
+         $hasil_guru = mysqli_query($koneksi, $tampil_guru);
+         $data_guru = mysqli_fetch_array($hasil_guru);
 
-						echo "	</TR>
+         echo "	</TR>
 			<td> $data[kode_mata_pelajaran] </td>
             <td> $data[nama_matapelajaran] </td>
 			<td> $data_guru[nama_guru] </td>
@@ -113,8 +126,8 @@
 			<td width='100'><a href='matapelajaran_edit.php?kode=$data[kode_mata_pelajaran]'> Edit </a></td>
 			<td width='100'><a href='matapelajaran_hapus.php?kode=$data[kode_mata_pelajaran]'> Hapus</a></td>
 			</TR>";
-					}
-					?>
+     }
+     ?>
 				</table>
 			</div>
 
